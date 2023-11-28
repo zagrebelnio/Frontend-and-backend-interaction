@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    display: flex;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content {
+    display: flex;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.form-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form {
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+}
+
+input, textarea {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border-color: #525050;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+
+
+.header {
+    background-color: #7FB414;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    height: 10vh;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.header-link {
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    transition: background-color 0.1s, box-shadow 0.1s;
+}
+
+.header-link:hover {
+    background-color: #648e10;
+    box-shadow: 0px 10px 20px 1px #2f4504;
+    color: white;
+}
+
+.left-sidebar {
+    background-color: #A0E418;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #E5F9BD;
+    text-align: right;
+    padding: 0 2rem;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+.right-sidebar {
+    background-color: #A0E418;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.5rem 0;
+}
+
+.footer {
+    background-color: #525050;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.list {
+    list-style: none;
+}
+
+.button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    width: 200px;
+    border: none;
+    background-color: none;
+    border: 3px solid #648e10;
+    color: #648e10;
+    transition: all 0.1s;
+}
+
+.button:hover {
+    background-color: #648e10;
+    color: white;
+    border-color: #2f4504;
+}
+
+.tabs-creation {
+    align-self: center;
+    width: 90%;
+    max-width: 1100px;
+    margin-top: 4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.tabs-container {
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.tabs-list {
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.tabs-list li {
+    padding: 8px 16px;
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    transition: all 0.2s;
+}
+
+.tabs-list li.active-tab {
+    border: 1px solid;
+    border-color: grey grey white grey;
+    background-color: white;
+}
+
+.tabs-content {
+    border-top: 1px solid var(--color-gray-400);
+    padding: 8px 0;
+    color: var(--color-gray-700);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    padding: 0.6rem 1.6rem;
+    appearance: none;
+    background-color: #648e10;
+    color: var(--color-white);
+    font: inherit;
+    font-size: 1.4rem;
+    border: 2px solid #2f4504;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.btn.btn--danger {
+    background-color: rgb(253, 45, 45);
+    border: 2px solid rgb(155, 0, 0);
+    color: white;
+}
+
+.tabs-list li button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    font-size: 1.6rem;
+    color: #648e10;
+}
+
+.tabs-list li.active-tab button {
+    color: #525050;
+}
